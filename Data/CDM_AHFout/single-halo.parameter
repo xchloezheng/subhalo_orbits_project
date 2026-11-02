@@ -1,0 +1,193 @@
+================================================================
+	             A        H       H   FFFFFFFF    
+	           A A       H       H   F           
+	         A   A      H       H   F           
+	       AAAAAAA     HHHHHHHHH   FFFFFF      
+	     A       A    H       H   F           
+	   A         A   H       H   F           
+	 A           A  H       H   F       (v1.0/110)
+================================================================
+
+
+AHF related parameter:
+----------------------
+AHF_MINPART                		150
+AHF_MINPART_GAS            		10
+AHF_MINPART_STARS          		10
+AHF_VTUNE                  		1.5
+AHF_RISE                   		1
+AHF_SLOPE                  		0.99
+AHF_MAXNRISE               		2
+AHF_MAX_GATHER_RAD         		5
+AHF_MIN_REF_OFFSET         		0
+AHF_NBIN_MULTIPLIER        		1
+AHF_HIRES_DM_WEIGHT        		1
+AHF_HOSTHALOLEVEL          		1
+PGAS                       		0
+PDM                        		-1
+PSTAR                      		-4
+PDMbndry                   		-5
+
+simulation related values:
+--------------------------
+a                          		1
+z                          		0
+Omega(z)                   		0.3153
+OmegaL(z)                  		0.6847
+rho_crit(z)                		2.77554e+11
+rho_back(z)                		8.75128e+10
+rho_vir(z)                 		2.77554e+11
+Delta_vir(z)               		200
+Hubble(z)                  		100
+
+GADGET related parameter:
+-------------------------
+GADGET_MUNIT               		7e+09
+GADGET_LUNIT               		0.0007
+
+general parameter:
+------------------
+NGRID_DOM                  		128
+NGRID_MAX                  		16777216
+MIN_NNODES                 		125
+MAXTIME                    		10000
+MAXSTRING                  		2048
+AMIGAHEADER                		2048
+HEADERSTRING               		256
+HEADERSIZE                 		664
+FILLHEADER                 		1384
+CRITMULTI                  		8
+NP_RATIO                   		7.5
+ZERO                       		1e-06
+MACHINE_ZERO               		5e-16
+MZERO                      		1e-10
+
+gravity solver related parameter:
+---------------------------------
+DOMSWEEPS                  		10
+REFSWEEPS                  		10
+W_SOR                      		1.34
+ETA                        		0.625
+CONVCRIT                   		0.1
+DOMCORRECT                 		0.25
+
+MPI related parameter:
+----------------------
+BITS_PER_DIMENSION         		21
+LOADBALANCE_DOMAIN_LEVEL   		0
+MAX_SEND_PARTICLES         		1000000
+VERBOSITY                  		6
+
+physical constants:
+-------------------
+Gyr                        		3.1558e+16
+Mpc                        		3.08568e+19
+H0                         		100
+rhoc0                      		2.77554e+11
+Grav                       		4.30065e-09
+cH0                        		2998
+kB_per_mp                  		0.00825481
+kBoltzman                  		6.94168
+
+*=====================*
+     DEFINEFLAGS:
+*=====================*
+
+AHF related flags:
+------------------
+AHF                        		1
+AHFlean                    		1
+AHFfast                    		0
+AHFnoHubbleDrag            		0
+DARK_ENERGY                		0
+AHFdisks                   		0
+AHFdensrecovery            		0
+AHFmaxdenscentre           		0
+AHFhiresfocus=            		0
+AHFptfocus=                 		-
+AHFrfocus=                  		-
+AHFnoremunbound             		0
+AHFundoPositionShiftAndScale		1
+AHFvmbp                     		0
+AHFaddDMonlyproperties      		0
+AHFignore_ugas              		0
+AHFgeom                    		0
+AHFmaxdenscentre           		0
+AHFgeomcentre              		0
+AHFcomcentre               		1
+AHFpotcentre               		0
+AHFphi_infty               		0
+AHFsplinefit               		0
+AHFprofilerise             		0
+AHFreducedinertiatensor    		0
+AHFcentrefile              		0
+AHFcentrefileBASIC         		0
+DPhalos                    		0
+AHFshellshape              		0
+AHFsplit_only              		0
+AHFexciseSubhaloStars      		0
+AHFnewHaloIDs              		0
+AHFrestart                 		0
+AHFbinary                  		0
+AHFsubstructure            		1
+AHFdmonlypeaks            		0
+AHFdmonly_Rmax_r2          		1
+AHFparticle_Rmax_r2        		1
+AHFgridinfofile            		0
+AHFspatialReffile          		0
+AHFnewCloseRefDist         		0
+AHFmaxGatherRadTest        		0
+SUSSING2013               		0
+SUSSING2013_particles     		0
+AHF_LRSI                   		0
+PARDAU_DISTANCE            		0
+PARDAU_NODES               		0
+PARDAU_PARTS               		1
+
+various flags:
+--------------
+WITH_MPI                   		0
+BYTESWAP                   		0
+MULTIMASS                  		1
+GAS_PARTICLES              		0
+VERBOSE                    		1
+VERBOSE2                   		1
+DOUBLE                     		0
+
+grid related flags:
+-------------------
+REFINE_BARYONIC_MASS       		0
+TSC                        		1
+CIC                        		0
+NGP                        		0
+
+gravity solver related flags:
+-----------------------------
+FIXED_SWEEPS               		0
+NO_SOR                     		0
+SWAP_XY                    		0
+SWAP_XZ                    		0
+
+GADGET related flags:
+---------------------
+GADGET                     		0
+GADGET_GAS_ONLY            		0
+GADGET_STARS_ONLY          		0
+GADGET_LUNIT_KPC           		0
+METALHACK                  		0
+
+misc. flags:
+------------
+NCPUREADING_EQ_NFILES      		0
+BCASTHEADER                		1
+FOPENCLOSE                 		1
+CHECK_RLIMIT_NOFILE        		0
+REF_TEST                   		1
+AHFDEBUG                   		0
+ART                        		0
+TIPSY                      		0
+TIPSY_ZOOMDATA             		0
+ASCII                      		0
+MLAPM                      		0
+AMIGA_ONE_FORMAT           		0
+ASCII_ONLYPOSITIONS        		0
